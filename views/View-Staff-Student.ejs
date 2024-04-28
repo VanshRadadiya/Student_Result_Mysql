@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="" style="text-align: center;">
+        <tr>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Student Password</th>
+            <th>Student Std</th>
+            <th>Student Div</th>
+        </tr>
+        <% result1.forEach(function(data){ %>
+            <tr>
+                <td>
+                    <%= data.id%>
+                </td>
+                <td>
+                    <%= data.name%>
+                </td>
+                <td>
+                    <%= data.email%>
+                </td>
+                <td>
+                    <%= data.password%>
+                </td>
+                <td>
+                    <%= data.std%>
+                </td>
+                <td>
+                    <%= data.divi%>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="" style="text-align: center;">
+        <tr>
+            <th>Student Sid</th>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Student Std</th>
+            <th>Student Div</th>
+            <th>Student Sub1</th>
+            <th>Student Sub2</th>
+            <th>Student Sub3</th>
+            <th>Student Sub4</th>
+            <th>Student Sub5</th>
+            <th>Student Total</th>
+            <th>Student Percentage</th>
+            <th>Student Min</th>
+            <th>Student Max</th>
+            <th>Student Grade</th>
+            <th>Student Status</th>
+
+
+
+        </tr>
+        <% result.forEach(function(data){ %>
+            <tr>
+                <td>
+                    <%= data.sid%>
+                </td>
+                <td>
+                    <%= data.name%>
+                </td>
+                <td>
+                    <%= data.email%>
+                </td>
+                <td>
+                    <%= data.std%>
+                </td>
+                <td>
+                    <%= data.divi%>
+                </td>
+                <td>
+                    <%= data.sub1%>
+                </td>
+                <td>
+                    <%= data.sub2%>
+                </td>
+                <td>
+                    <%= data.sub3%>
+                </td>
+                <td>
+                    <%= data.sub4%>
+                </td>
+                <td>
+                    <%= data.sub5%>
+                </td>
+                <td>
+                    <%= data.total%>
+                </td>
+                <td>
+                    <%= data.percentage%>
+                </td>
+                <td>
+                    <%= data.min%>
+                </td>
+                <td>
+                    <%= data.max%>
+                </td>
+                <td>
+                    <%= data.grade%>
+                </td>
+                <td>
+                    <%= data.status%>
+                </td>
+
+            </tr>
+            <% }); %>
+    </table>
+</body>
+
+</html>
